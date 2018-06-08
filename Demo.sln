@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "redis", "redis", "{585BCF2E-771A-4CE2-852E-67DE70A4D3C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "polly", "polly", "{B751440F-5C8D-4B02-A6E5-284FFB8841FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollyDemo", "polly\PollyDemo\PollyDemo.csproj", "{E91139FE-6DBF-4346-A3ED-F35FC15F2417}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".global", ".global", "{B8092573-E409-4C83-8D7E-81BB9145B108}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E91139FE-6DBF-4346-A3ED-F35FC15F2417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91139FE-6DBF-4346-A3ED-F35FC15F2417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91139FE-6DBF-4346-A3ED-F35FC15F2417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91139FE-6DBF-4346-A3ED-F35FC15F2417}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E91139FE-6DBF-4346-A3ED-F35FC15F2417} = {B751440F-5C8D-4B02-A6E5-284FFB8841FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {23498D4A-CE58-4EA9-A8F5-40DF19114FED}
