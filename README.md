@@ -4,10 +4,11 @@
 
 ## 项目结构
 * [Polly自动重试框架](https://github.com/CSharpCross/demo/tree/master/polly/PollyDemo)
+* [Scrutor依赖注入扫描](https://github.com/CSharpCross/demo/tree/master/scrutor/ScrutorDemo)
 
 
 ## 常用类库
-
+* [Scrutor依赖注入扫描](https://github.com/khellang/Scrutor)   
 * [Dapper数据库访问](https://github.com/StackExchange/Dapper)   
 * [Xunit单元测试](https://github.com/xunit/xunit)   
 * [RabbitMQ事件总线](http://www.rabbitmq.com/)   
