@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "redis", "redis", "{585BCF2E-771A-4CE2-852E-67DE70A4D3C6}"
+	ProjectSection(SolutionItems) = preProject
+		redis\Dockerfile = redis\Dockerfile
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "polly", "polly", "{B751440F-5C8D-4B02-A6E5-284FFB8841FC}"
 EndProject
@@ -20,7 +23,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScrutorDemo", "scrutor\Scru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "protoactor", "protoactor", "{BB1259FD-A56F-4124-B8A9-5837C2797678}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoActorDemo", "protoactor\ProtoActorDemo\ProtoActorDemo.csproj", "{2EB93155-8CB5-416C-B861-F1F9001C0866}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoActorDemo", "protoactor\ProtoActorDemo\ProtoActorDemo.csproj", "{2EB93155-8CB5-416C-B861-F1F9001C0866}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisDemo", "redis\RedisDemo\RedisDemo.csproj", "{4670FC42-C4D2-47A4-938F-906A53EC83A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "analyser", "analyser", "{D24C3823-0312-43F1-964F-53D91DF43799}"
+	ProjectSection(SolutionItems) = preProject
+		analyser\Dockerfile = analyser\Dockerfile
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JieBaDemo", "analyser\JieBaDemo\JieBaDemo.csproj", "{B35627D1-4F36-40BA-A9D3-75F08DF2A7BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +52,14 @@ Global
 		{2EB93155-8CB5-416C-B861-F1F9001C0866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EB93155-8CB5-416C-B861-F1F9001C0866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EB93155-8CB5-416C-B861-F1F9001C0866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4670FC42-C4D2-47A4-938F-906A53EC83A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4670FC42-C4D2-47A4-938F-906A53EC83A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4670FC42-C4D2-47A4-938F-906A53EC83A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4670FC42-C4D2-47A4-938F-906A53EC83A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35627D1-4F36-40BA-A9D3-75F08DF2A7BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35627D1-4F36-40BA-A9D3-75F08DF2A7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35627D1-4F36-40BA-A9D3-75F08DF2A7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35627D1-4F36-40BA-A9D3-75F08DF2A7BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +68,8 @@ Global
 		{E91139FE-6DBF-4346-A3ED-F35FC15F2417} = {B751440F-5C8D-4B02-A6E5-284FFB8841FC}
 		{034CE349-9297-4661-8222-DD42563A650C} = {9F9048B6-7E79-43E7-A0E5-58255F283626}
 		{2EB93155-8CB5-416C-B861-F1F9001C0866} = {BB1259FD-A56F-4124-B8A9-5837C2797678}
+		{4670FC42-C4D2-47A4-938F-906A53EC83A6} = {585BCF2E-771A-4CE2-852E-67DE70A4D3C6}
+		{B35627D1-4F36-40BA-A9D3-75F08DF2A7BA} = {D24C3823-0312-43F1-964F-53D91DF43799}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {23498D4A-CE58-4EA9-A8F5-40DF19114FED}
