@@ -23,5 +23,19 @@ namespace RedisDemo
                 var value = db.StringGet("K" + x);
             });
         }
+
+        [Fact]
+        public void Platform_Test()
+        {
+            bool isMono = Type.GetType("Mono.Runtime") != null;
+
+            Console.WriteLine($"IsMono {isMono}");
+
+            bool isUnix = (int)Environment.OSVersion.Platform == 4
+                || (int)Environment.OSVersion.Platform == 6
+                || (int)Environment.OSVersion.Platform == 128;
+
+            Console.WriteLine($"IsUnix {isUnix}");
+        }
     }
 }

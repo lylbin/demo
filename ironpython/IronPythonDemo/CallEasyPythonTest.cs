@@ -10,14 +10,12 @@ namespace IronPythonDemo
         public void Call_GetStr_Test()
         {
             var engine = Python.CreateEngine();
+            var searchPaths = engine.GetSearchPaths();
+            searchPaths.Add(@"C:\Users\97669\AppData\Local\Programs\Python\Python36-32\Lib");
+            engine.SetSearchPaths(searchPaths);
 
-            var runtime = Python.CreateRuntime();
-            var sys = runtime.GetSysModule();
-            IronPython.Runtime.List paths = null;
-            sys.TryGetVariable<IronPython.Runtime.List>("path", out paths);
-            dynamic py = runtime.UseFile("test.py");
-
-            string a = py.getStr();
+            dynamic script = engine.ExecuteFile("test.py");
+            string a = script.getStr();
 
             Console.WriteLine(a);
         }
